@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>test</legend>
+            <label>
+                your name
+                <input type="text">
+            </label>
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        </fieldset>
+
+        <fieldset>
+            <legend>checkbox</legend>
+            <input type="checkbox" name="check[]" value="check1">
+            <input type="checkbox" name="check[]" value="check2">
+            <input type="checkbox" name="check[]" value="check3">
+            <input type="checkbox" name="check[]" value="check4">
+        </fieldset>
+        <fieldset>
+            <legend>radio</legend>
+            <input type="radio" name="radio[]" value="radio1">
+            <input type="radio" name="radio[]" value="radio2">
+            <input type="radio" name="radio[]" value="radio3">
+            <input type="radio" name="radio[]" value="radio4">
+        </fieldset>
+        <fieldset>
+            <legend>email</legend>
+            <input type="email" name="email">
+        </fieldset>
+        <fieldset>
+            <legend>file</legend>
+            <input type="file" name="file">
+        </fieldset>
+        <fieldset>
+            <legend>textarea</legend>
+            <textarea name="text" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>select</legend>
+            <select name="select" size="2" multiple>
+                <option value="sel1">sel1</option>
+                <option value="sel2">sel2</option>
+                <option value="sel3">sel3</option>
+            </select>
+        </fieldset>
+        <input type="number" min="10" max="100" step="30">
+        <input type="text" pattern="[0-9]{6,10}"> 
+        <input type="submit">
+    </form>
+</body>
+</html>
